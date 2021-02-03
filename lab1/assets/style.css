@@ -6,7 +6,6 @@
 
 body {
     background-color: rgb(5, 107, 85);
-    width: 100%;
     max-width: 1480px;
     font-family: 'Lexend Exa', sans-serif;
 }
@@ -14,15 +13,12 @@ body {
 /* Container */
 
 .container {
-    width: 100%;
-    height: 100%;
     max-width: 740px;
 
     scroll-behavior: smooth;
 
     margin: 0 auto;
     background-color: rgba(7, 85, 68, 0.432);
-    padding: 0px 10px;
 }
 
 /* Intro */
@@ -31,15 +27,14 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
 }
 
 /* Header */
 
 .header {
     padding: 3px 0;
-    width: 100%;
-    top: 0;
+    top: 0; 
+    background:rgba(0, 0, 0, 0.1);
 }
 
 .header-inner {
@@ -91,7 +86,7 @@ body {
 /* Intro */
 
 .intro {
-    width: 70%;
+    width: 80%;
 
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -108,6 +103,8 @@ body {
 /* Paragraphs*/
 
 .paragraph {
+    margin: 0 10px;
+
     font: bold italic 15px;
     color: #fff;
     text-align: justify;
