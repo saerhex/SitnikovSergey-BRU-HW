@@ -6,7 +6,6 @@
 
 body {
     background-color: rgb(1, 112, 88);
-    max-width: 1480px;
     font-family: 'Lexend Exa', sans-serif;
 }
 
@@ -33,8 +32,9 @@ body {
 
 .header {
     padding: 3px 10px;
+    position: sticky;
     top: 0; 
-    background:rgba(0, 0, 0, 0.1);
+    background:rgba(0, 0, 0, 0.4);
 }
 
 .header-inner {
