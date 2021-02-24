@@ -1,0 +1,108 @@
+.picture {
+  background: url(../images/hero_2.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.picture-text {
+  font-size: 70px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  text-align: center;
+}
+.picture-arrow {
+  margin: 0 15px;
+  padding: 15px;
+  background: rgba(56, 56, 56, 0.315);
+}
+.picture-arrow:hover {
+  filter: brightness(20%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.frame {
+  transform: skewY(-4deg);
+  height: 100px;
+  background-color: white;
+  margin-top: -45px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 10;
+  font-family: "Oswald", arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.intro h1 {
+  width: 100%;
+  z-index: inherit;
+  color: #969696;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  margin-bottom: 5px;
+}
+.intro h2 {
+  width: 100%;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 30px;
+}
+.intro h2::after {
+  content: "";
+  margin-top: 60px;
+  margin-bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #71bc42;
+}
+.intro-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 40px 60px;
+}
+.intro-row-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 10px;
+  border-right: 1px solid #dee2e6;
+}
+.intro-row-element .resize {
+  width: 25%;
+  margin: 0 auto;
+}
+.intro-row-element .header {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #000;
+}
+.intro-row-element .info {
+  line-height: 1.7;
+  padding: 0 10px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.intro-row-element:last-child {
+  border-right: none;
+}

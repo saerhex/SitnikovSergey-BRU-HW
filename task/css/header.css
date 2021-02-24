@@ -1,0 +1,37 @@
+.header {
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.header-logo {
+  font-size: 20px;
+  font-weight: 1000;
+  text-align: center;
+  color: #000;
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 12px;
+  font-family: work sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  letter-spacing: 0.1em;
+  justify-items: center;
+}
+.header-navigation-link {
+  margin: 5px 10px;
+  color: #a8a8a8;
+}
+.header-navigation-link:hover {
+  color: #000;
+  transition: color 0.3s ease-in;
+}
+.header-navigation-btn {
+  margin: 0x 5px;
+  padding: 5px 15px;
+  background-color: #5cc93a;
+  color: #fff;
+}
