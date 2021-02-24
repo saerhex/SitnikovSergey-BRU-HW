@@ -1,0 +1,30 @@
+@import "mixins";
+.main-block {
+    &-half {
+        display: flex;
+        &-picture-coffee {
+            background: url(../images/img_4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50%;
+        }
+        &-picture-watches {
+            background: url(../images/img_5.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+        }
+        &-info-block {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 80px 120px;
+            text-align: left;
+            font-family: $family;
+            @include flex(column, flex-start, none);
+            @include info-header(0, rgb(158, 158, 158), #000, left, 30);
+        }
+        &:last-child {
+            margin-bottom: 100px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@mixin h2-fonts {
+    line-height: 1.7;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: $wrk-sans-family;
+}
+
+@mixin info-header($index, $header-color, $h2-color, $align, $margin-top) {
+    font-family: $family;
+    text-align: $align;
+    & h1 {
+        z-index: $index;
+        color: $header-color;
+        font-size: 16px;
+        letter-spacing: .2em;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    & h2 {
+        font-size: 30px;
+        color: $h2-color;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    & h3 {
+        margin-top: $margin-top+px;
+        @include h2-fonts();
+    }
+}
+
+@mixin line-list($h-color, $margin-bottom-val) {
+    .item {
+        margin: 10px 20px $margin-bottom-val+px;
+        @include flex(column, center, flex-start);
+        font-family: $family;
+        text-align: left;
+        line-height: 30px;
+        .resize {
+            width: 100%;
+        }
+        &-header {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin: 30px 20px 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: $h-color;
+        }
+        &-main-info {
+            @include h2-fonts();
+            margin: 0px 20px 5px;
+        }
+        &-button {
+            margin: 10px 20px 40px;
+            padding: 5px 40px;
+            background: $light-green;
+            line-height: 1.2;
+            color: #fff;
+            font-family: $wrk-sans-family;
+            &:hover {
+                background-color: #60a038;
+                transition: background-color .3s ease-in-out;
+            }
+        }
+        &:hover {
+            box-shadow: $shadow;
+            transition: box-shadow .5s ease-in-out;
+        }
+        &-more-info {
+            color: $light-green;
+            margin: 10px 20px 40px;
+            line-height: 30px;
+            font-family: $wrk-sans-family;
+            &:hover {
+                color: #60a038;
+                transition: background-color .3s ease-in-out;
+            }
+        }
+    }
+}
+
+@mixin button {
+    .button {
+        margin: 0 15px;
+        padding: 15px;
+        background: rgb(255, 255, 255);
+        &:hover {
+            background: $light-green;
+            transition: background 1s ease-in-out;
+        }
+        & img:hover {
+            filter: invert(100%);
+            transition: filter 1s ease-in-out;
+        }
+    }
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
