@@ -79,6 +79,7 @@ body {
   text-align: center;
 }
 .picture-arrow {
+  max-height: 16px;
   margin: 0 15px;
   padding: 15px;
   background: rgba(56, 56, 56, 0.315);
@@ -319,6 +320,8 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 .add-section .button {
+  max-height: 16px;
+  text-align: center;
   margin: 0 15px;
   padding: 15px;
   background: white;
@@ -448,6 +451,8 @@ body {
   align-items: center;
 }
 .final .feedback .carousel .button {
+  max-height: 16px;
+  text-align: center;
   margin: 0 15px;
   padding: 15px;
   background: white;

@@ -82,6 +82,8 @@
 
 @mixin button {
     .button {
+        max-height: 16px;
+        text-align: center;
         margin: 0 15px;
         padding: 15px;
         background: rgb(255, 255, 255);
